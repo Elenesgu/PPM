@@ -25,7 +25,6 @@ const int PatternLengthDiv = 10;
 void runalgo(int var);
 
 int main() {
-	concurrency::array_view<int, 1> view(1000U, 0);
 	auto func = runalgo;
 	concurrency::parallel_for(0, 1000, runalgo);
 
